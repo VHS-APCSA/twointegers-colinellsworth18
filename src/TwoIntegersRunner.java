@@ -6,15 +6,14 @@ public class TwoIntegersRunner
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter first integer!");
 		int num1 = input.nextInt();
-		System.out.println("Enter your second integer!");
-		int num2 = input.nextInt();
-		TwoIntegers twointegers = new TwoIntegers(num1, num2);
-		boolean even = twoIntegers.isEven();
-		System.out.println(twoIntegers.getNum1() + " and " + num2 + " are even = " + even));
-		boolean multiple = twoIntegers.isMultiple();
-		System.out.println(twoIntegers.getNum1() + " is multiple of " + num2 + " = " + multiple));
-		String operators = twoIntegers.arithmetic();
-		String compare = twoIntegers.comparingIntegers();
-		System.out.println(compare);
+		System.out.println("\n" + "Second integer:");
+		TwoIntegers arithmetic = new TwoIntegers(num1, num2);
+		System.out.println(arithmetic.arithmetic());
+		String compare = arithmetic.compare();
+		System.out.print(compare);
+		Boolean oddOrEven = arithmetic.oddOrEven();
+		System.out.print("Integer 1 is even: " + oddOrEven + "\n");
+		Boolean multiples = arithmetic.multiples();
+		System.out.print("Integer 1 is a multiple of integer 2 = " + multiples);
 	}
 }

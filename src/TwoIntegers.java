@@ -58,10 +58,6 @@ public class TwoIntegers
 		arithmetic += "Quotient =" + quotient();
 		return arithmetic;
 	}
-	public int nextInt()
-	{
-		return 0;
-	}
 	public String comparingIntegers()
 	{
 		String comparingIntegers = "";
@@ -78,7 +74,8 @@ public class TwoIntegers
 			comparingIntegers = num1 + "<" + num2;
 		}
 		return comparingIntegers;
-	public boolean isMultiple()
+	}
+		public boolean isMultiple()
 		{
 			if (num1 % num2==0)
 			{
@@ -90,4 +87,4 @@ public class TwoIntegers
 			}
 		}
 	}
-}
+
