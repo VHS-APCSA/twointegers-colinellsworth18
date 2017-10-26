@@ -75,28 +75,26 @@ public class TwoIntegers
 		}
 		return compare;
 	}
-		public boolean oddOrEven()
+	public boolean oddOrEven()
+	{
+		if (num1 % num2==0)
 		{
-			if (num1 % num2==0)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
+			return true;
 		}
-			public boolean multiples()
-			{
-				if(num1%num2 == 0)
-				{
-					return true;
-				}
-				else
-				{
-					return false;
-				}
-			}
+		else
+		{
+			return false;
 		}
 	}
-
+	public boolean multiples()
+	{
+		if(num1%num2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
