@@ -6,6 +6,7 @@ public class TwoIntegersRunner
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter first integer!");
 		int num1 = input.nextInt();
+		int num2 = input.nextInt();
 		System.out.println("\n" + "Second integer:");
 		TwoIntegers arithmetic = new TwoIntegers(num1, num2);
 		System.out.println(arithmetic.arithmetic());

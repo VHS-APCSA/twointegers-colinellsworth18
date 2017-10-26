@@ -58,24 +58,24 @@ public class TwoIntegers
 		arithmetic += "Quotient =" + quotient();
 		return arithmetic;
 	}
-	public String comparingIntegers()
+	public String compare()
 	{
-		String comparingIntegers = "";
+		String compare = "";
 		if (num1 > num2)
 		{
-			comparingIntegers = num1 + " > " + num2;
+			compare = num1 + " > " + num2;
 		}
 		else if (num1 == num2)
 		{
-			comparingIntegers = num1 + "==" + num2;
+			compare = num1 + "==" + num2;
 		}
 		else
 		{
-			comparingIntegers = num1 + "<" + num2;
+			compare = num1 + "<" + num2;
 		}
-		return comparingIntegers;
+		return compare;
 	}
-		public boolean isMultiple()
+		public boolean oddOrEven()
 		{
 			if (num1 % num2==0)
 			{
@@ -84,6 +84,18 @@ public class TwoIntegers
 			else
 			{
 				return false;
+			}
+		}
+			public boolean multiples()
+			{
+				if(num1%num2 == 0)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
 			}
 		}
 	}
